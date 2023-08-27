@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(44, 62, 80);
+    position: fixed;
+    padding: 20px 40px;
+    z-index: 999;
+    top: 0;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+
+}
+
+
+.navbar-list a,
+.logo a {
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.navbar-list a:hover {
+    background-color: #555;
+}
+
+
+.navbar .logo {
+    width: max-content;
+    flex-wrap: nowrap;
+    font-weight: bolder;
+
+}
+
+
+h1 {
+    font-size: xx-large;
+}
+
+.startBootstrapSection {
+    min-width: 300px;
+    height: 100vh;
+    padding-top: 100px;
+    background-color: rgb(26, 188, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.startBootstrapSection p {
+    text-align: center;
+
+}
+
+.startBootstrapSection .circle {
+    position: relative;
+}
+
+.startBootstrapSection .myPic {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-color: rgb(44, 62, 80);
+}
+
+.startBootstrapSection .myPic img {
+    width: 220px;
+    position: absolute;
+    top: -10px;
+    border-radius: 50%;
+    transform: translate(0rem, -3rem);
+
+}
+
+.startBootstrapSection h1 {
+    text-align: center;
+}
+
+.line-star { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.line1 {
+    width: 5rem;
+    height: 4px;
+    border-radius: 5px;
+    margin: 2%;
+}
+
+.star-icon {
+    font-size: xx-large;
+    padding: 0 10px;
+}
+
+.portfolioSection,
+.aboutSection,
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.portfolio-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+    width: 300px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(9, 3, 3, 0.6);
+    margin: 2vh 2vw;
+    position: relative;
+}
+
+.card1 .circle1,
+.card2 .circle2,
+.card3 .circle3,
+.card4 .circle4,
+.card5 .circle5,
+.card6 .circle6 {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card1 .circle1 img,
+.card2 .circle2 img,
+.card3 .circle3 img,
+.card4 .circle4 img,
+.card5 .circle5 img,
+.card6 .circle6 img {
+    height: 100%;
+    width: 150%;
+}
+
+.card1 {
+    background-color: rgb(241, 101, 41);
+}
+
+.card1 .circle1 img {
+    height: 150px;
+    width: 150%;
+}
+
+.card2 {
+    background-color: rgb(22, 115, 182);
+}
+
+.card2 .circle2 img {
+    height: 80%;
+    width: 50%;
+}
+
+.card3 {
+    background-color: rgb(229, 162, 40);
+}
+
+.card4 {
+    background-color: rgb(207, 165, 69);
+}
+
+.card5 {
+    background-color: black;
+}
+
+.card6 {
+    background-color: rgb(99, 36, 71);
+}
+
+.aboutSection {
+    background-color: rgb(26, 188, 156);
+
+}
+
+.about-paragraphs-container {
+    max-width: 50em;
+    display: flex;
+    gap: 20px;
+}
+
+.p {
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+
+
+.aboutSection .button {
+    width: 15em;
+    height: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(26, 188, 156);
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 4vw;
+    cursor: pointer;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    min-width: 17em;
+    gap: 25px;
+
+}
+
+
+textarea,
+input {
+    height: 2rem;
+    width: 5wv;
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-lines: 1;
+    text-align: left;
+    border: 0;
+    border-bottom: 1px solid rgb(206, 212, 218);
+    resize: none;
+    margin-top: 1rem;
+}
+
+
+textarea:focus {
+    border-color: rgb(26, 188, 156);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+label {
+    color: rgb(108, 113, 119);
+}
+
+.contactSection .button {
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(106, 211, 191);
+    margin-top: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    text-align: center;
+    padding: 2em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    gap: 2rem;
+}
+
+.footerSection div p {
+    margin-top: 1rem;
+}
+
+.around-the-web .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.icons div {
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.about-freelancer p a {
+    color: rgb(26, 188, 156);
+}
+
+.copyright-bar {
+
+    background-color: rgb(26, 37, 47);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.blue-bg-color {
+    background-color: rgb(44, 62, 80);
+}
+
+.blue-color {
+    color: rgb(44, 62, 80);
+}
+
+.white-bg-color {
+    background-color: white;
+}
+
+.white-color {
+    color: white;
+}
+.navbar button{
+    display: none;
+    background: none;
+    border: none;
+}
+@media screen  and (max-width : 500px){
+    .navbar button{
+        display: block;
+    }
+    .navbar .navbar-list{
+        display: none;
+
+    }
+}
