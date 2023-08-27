@@ -51,7 +51,7 @@ h1 {
     font-size: xx-large;
 }
 
-.startBootstrapSection {
+.amalSection {
     min-width: 300px;
     height: 100vh;
     padding-top: 100px;
@@ -62,23 +62,23 @@ h1 {
     justify-content: center;
 }
 
-.startBootstrapSection p {
+.amalSection p {
     text-align: center;
 
 }
 
-.startBootstrapSection .circle {
+.amalSection .circle {
     position: relative;
 }
 
-.startBootstrapSection .myPic {
+.amalSection .myPic {
     width: 220px;
     height: 220px;
     border-radius: 50%;
     background-color: rgb(44, 62, 80);
 }
 
-.startBootstrapSection .myPic img {
+.amalSection .myPic img {
     width: 220px;
     position: absolute;
     top: -10px;
@@ -87,7 +87,7 @@ h1 {
 
 }
 
-.startBootstrapSection h1 {
+.amalSection h1 {
     text-align: center;
 }
 
